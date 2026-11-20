@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160A2E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23160A2E'/%3E%3Cpath d='M10 6v20h15v-5H15V6' fill='%23FF2E88'/%3E%3C/svg%3E">
+  <title>LEONIDA — GTA 6 Trophy Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="./"><span class="brand-mark">L</span> LEONIDA <span class="edition">FIELD GUIDE / VI</span></a>
+      <div class="nav-right"><span class="offline"><i></i> OFFLINE READY</span><button id="export">↓ Export</button><label class="import-button">↑ Import<input id="import" type="file" accept="application/json,.json"></label></div>
+    </nav>
+    <header class="hero">
+      <canvas id="skyline" aria-label="Original generated sunset skyline of an imagined Vice City" role="img"></canvas>
+      <div class="hero-copy"><p class="eyebrow">55 TROPHIES. ONE LEONIDA LEGEND.</p><h1>LEONIDA<span>GTA 6 TROPHY GUIDE</span></h1><p class="hero-caption">Your road to platinum starts after sundown.</p></div>
+      <section class="progress-card" aria-label="Trophy progress"><div class="progress-heading"><span>THE PLATINUM PURSUIT</span><span class="diamond">◇</span></div><div class="progress-numbers"><strong id="earned-count">0<span>/55</span></strong><span id="percent">0%</span></div><div class="progress-track" role="progressbar" aria-label="Earned trophies" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0"><div id="progress-fill"></div></div><p><span id="remaining">55 trophies to go</span><span id="save-state">Saved on this device</span></p></section>
+      <span class="hero-coordinate">LEONIDA, USA / AFTER HOURS</span>
+    </header>
+    <section class="roadmap" aria-labelledby="roadmap-heading">
+      <div class="section-label"><h2 id="roadmap-heading">ROAD TO PLATINUM</h2><button id="roadmap-toggle" aria-expanded="false">View the plan ↗</button></div>
+      <div id="steps" class="steps"></div>
+      <div id="roadmap-plan" hidden></div>
+    </section>
+    <main>
+      <div class="collection-heading"><div><span class="eyebrow">THE COMPLETE COLLECTION</span><h2>Trophy checklist <span id="result-count">55 trophies</span></h2></div><label class="switch-label"><input id="spoilers" type="checkbox"><span class="switch"></span>Hide story spoilers</label></div>
+      <div class="filter-top"><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the collection…" aria-label="Search trophies"></label><label class="grade-label">GRADE<select id="grade" aria-label="Grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label><label class="hide-label"><input id="hide-earned" type="checkbox"> Hide earned</label></div>
+      <div class="filter-bottom"><div id="kinds" class="chips" role="group" aria-label="Trophy kind"></div><span class="save-indicator">● LOCAL SAVE</span></div>
+      <div class="workspace"><section aria-label="Trophy checklist" class="list-column"><div class="list-caption"><span>TROPHY / OFFICIAL REQUIREMENT</span><span>EARNED</span></div><div id="trophies" class="trophy-list"></div></section><aside id="guide" class="guide" aria-label="Trophy field guide"></aside></div>
+      <p class="evidence-note">SOURCE NOTES / No description confirms a permanent missable or online trophy. Hidden flags: 28 provisional editorial assignments. Counts from starter hints are labelled unverified. <button id="notes-toggle" aria-expanded="false">About this guide ↗</button></p>
+      <div id="notes" hidden><p>This independent companion uses the supplied official trophy list. Exophase and PSNProfiles returned HTTP 403 during research. Guides distinguish confirmed requirements from unknown locations, access conditions and cryptic unlocks. Stage order is an editorial planning aid, not a verified mission chronology; tackle available side content as you go. A false missable flag means no permanent miss is confirmed, not a guarantee of replayability. No supplied description identifies online trophies. Provisional hidden flags do not claim to reproduce PlayStation's hidden identities.</p><p>All progress stays on this browser. Export a backup before changing devices. Screenshot presets use an isolated sample checklist until you return to the normal URL.</p></div>
+    </main>
+    <footer><span>LEONIDA <b> / </b> AN INDEPENDENT FIELD GUIDE</span><span>PS5 · 1 PLATINUM · 2 GOLD · 6 SILVER · 46 BRONZE</span></footer>
+  </div>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
